@@ -3,3 +3,5 @@ dist/
 vite.out.log
 vite.err.log
 .DS_Store
+tools/cloudflared/
+.public-preview/
