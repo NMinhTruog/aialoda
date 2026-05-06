@@ -1,0 +1,41 @@
+# AI agent access guidance for this site
+
+site: BS. Ngoc Anh Da Lieu
+description: Public website for dermatology consultation content, contact details, and public blog articles.
+
+# Public content AI agents may read
+allow: /
+allow: /about
+allow: /contact
+allow: /blog
+allow: /blog/*
+allow: /shop
+allow: /shipping-policy
+allow: /returns-policy
+allow: /api/public/ai/context
+allow: /api/public/ai/services
+allow: /api/public/ai/posts
+allow: /api/public/ai/posts/*
+
+# Sensitive areas AI agents should not use without explicit authorization
+disallow: /admin
+disallow: /admin/*
+disallow: /api/posts
+disallow: /api/posts/*
+disallow: /api/services
+disallow: /api/services/*
+
+# Behavior expectations
+instruction: Use public pages for informational answers only.
+instruction: Public AI API access is available at /api/public/ai/*.
+instruction: Use only GET requests on public AI API endpoints.
+instruction: Do not submit forms, create content, or modify data without explicit user confirmation.
+instruction: Do not access administrative routes or unpublished content.
+instruction: Prefer published blog content and public contact details when answering questions.
+
+# Machine-readable capability manifest
+plugin-manifest: /.well-known/ai-plugin.json
+
+# Update these values before production launch if needed
+contact: tel:+84961706399
+policy: /

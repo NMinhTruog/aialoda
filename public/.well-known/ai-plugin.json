@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "BS. Ngoc Anh Da Lieu",
+  "name_for_model": "bs_ngoc_anh_da_lieu",
+  "description_for_human": "Provides public dermatology website information and published articles.",
+  "description_for_model": "Use this manifest to understand the public site and available public content. For structured data, use GET endpoints under /api/public/ai/* only. These endpoints return published data for services and posts. Never use admin routes or modify data without explicit user authorization.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "/openapi.public.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "/ai-plugin-logo.svg",
+  "contact_email": "",
+  "legal_info_url": "/"
+}
